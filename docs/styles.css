@@ -8,7 +8,7 @@
   --primary: #1e40af;
   --secondary: #16a34a;
   --accent-tech: #6d28d9;
-  --cta: #f97316;
+  --cta: #f57920;
   --header-height: 92px;
 }
 
@@ -136,8 +136,8 @@ p {
 .box-posizionamento {
   background: linear-gradient(
     135deg,
-    rgba(249, 115, 22, 0.26),
-    rgba(255, 255, 255, 0.95)
+    rgba(249, 115, 22, 0.60),
+    rgba(235, 234, 234, 0.6)
   );
 }
 
@@ -158,11 +158,12 @@ p {
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
-  color: var(--cta);
+  color: var(--card);
 }
 
 .box-posizionamento p {
   margin-top: 12px;
+  color: var(--card);
 }
 
 
