@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple mobile website starter" />
+    <title>Mobile Website</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --primary: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, #ecfeff 0%, var(--bg) 60%);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 480px;
+        margin: 0 auto;
+        min-height: 100dvh;
+        padding: 16px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        gap: 16px;
+      }
+
+      header,
+      main,
+      footer {
+        background: var(--card);
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 6px 20px rgba(15, 118, 110, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      nav {
+        margin-top: 14px;
+        display: grid;
+        gap: 8px;
+      }
+
+      .btn {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: var(--primary);
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      @media (min-width: 700px) {
+        .container {
+          max-width: 700px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Mobile Website</h1>
+        <p>Simple, clean mobile-first starter structure.</p>
+      </header>
+
+      <main>
+        <h2>Welcome</h2>
+        <p>This section is your main content area.</p>
+        <nav>
+          <a class="btn" href="#">Get Started</a>
+          <a class="btn" href="#" style="background:#134e4a;">Learn More</a>
+        </nav>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Your Site Name</p>
+      </footer>
+    </div>
+  </body>
+</html>
