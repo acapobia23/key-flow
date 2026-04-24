@@ -8,6 +8,7 @@
   --primary: #1e40af;
   --secondary: #16a34a;
   --accent-tech: #6d28d9;
+  --services: #000080;
   --cta: #f57920;
   --header-height: 92px;
 }
@@ -197,6 +198,33 @@ p {
 .box-green p {
   margin-top: 12px;
   color: var(--card);
+}
+
+.box-servizi h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--services);
+}
+
+.box-servizi {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(30, 64, 175, 0.08));
+}
+
+.box-servizi ul {
+  margin: 14px 0 0;
+  padding-left: 22px;
+  text-align: left;
+  color: color-mix(in srgb, var(--services) 88%, black);
+}
+
+.box-servizi li + li {
+  margin-top: 8px;
+}
+
+.box-servizi strong {
+  color: var(--services);
 }
 
 
