@@ -19,10 +19,18 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  position: relative;
+  color: var(--text);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background: linear-gradient(rgba(248, 250, 252, 0.48), rgba(248, 250, 252, 0.48)),
     url("asset/img/background1.jpg") center / cover no-repeat;
-  background-attachment: fixed;
-  color: var(--text);
 }
 
 .container {
