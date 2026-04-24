@@ -87,6 +87,10 @@ p {
   border-radius: 14px;
   padding: 14px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .section-box h2 {
@@ -94,16 +98,6 @@ p {
 }
 
 .box-titolo {
-  border-left: 5px solid var(--primary);
-    background: rgba(255, 255, 255, 0.95);
-
-}
-
-.hero-box {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  padding: 50px 20px;
 
   background: linear-gradient(
     135deg,
@@ -112,25 +106,18 @@ p {
   );
 }
 
-/* forma decorativa */
-.hero-box::after {
+.box-titolo::after {
   content: "";
   position: absolute;
   bottom: -60px;
   right: -60px;
   width: 220px;
   height: 220px;
-  /* background: var(--cta); */
   transform: rotate(45deg);
   opacity: 0.15;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-box h1 {
+.box-titolo h1 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.2;
@@ -138,34 +125,19 @@ p {
   color: var(--primary);
 }
 
-.hero-box p {
+.box-titolo p {
   margin-top: 12px;
-  /* font-size: 0.95rem; */
 }
 
-.hero-box .btn {
+.box-titolo .btn {
   margin-top: 18px;
 }
 
-.box-posizionamento {
-  border-left: 5px solid var(--accent-tech);
-}
-
-.box-green {
-  border-left: 5px solid var(--secondary);
-}
-
-.box-servizi {
-  border-left: 5px solid var(--primary);
-}
-
 .box-perche-noi {
-  border-left: 5px solid var(--accent-tech);
   background: linear-gradient(180deg, rgba(109, 40, 217, 0.08), rgba(255, 255, 255, 0.95));
 }
 
 .box-cta-whatsapp {
-  border-left: 5px solid var(--cta);
   background: linear-gradient(180deg, rgba(249, 115, 22, 0.1), rgba(255, 255, 255, 0.95));
 }
 
