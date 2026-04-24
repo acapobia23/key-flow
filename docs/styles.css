@@ -133,6 +133,39 @@ p {
   margin-top: 18px;
 }
 
+.box-posizionamento {
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.26),
+    rgba(255, 255, 255, 0.95)
+  );
+}
+
+.box-posizionamento::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  background: rgba(249, 115, 22, 0.25);
+  transform: rotate(45deg);
+  opacity: 0.2;
+}
+
+.box-posizionamento h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--cta);
+}
+
+.box-posizionamento p {
+  margin-top: 12px;
+}
+
+
 .box-perche-noi {
   background: linear-gradient(180deg, rgba(109, 40, 217, 0.08), rgba(255, 255, 255, 0.95));
 }
